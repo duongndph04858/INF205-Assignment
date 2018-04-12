@@ -896,9 +896,9 @@
             Gets the nickname the user goes by.
             </summary>
         </member>
-        <member name="P:DotNetOpenAuth.OpenId.Interop.ClaimsResponseShim.Email">
+        <member name="P:DotNetOpenAuth.OpenId.Interop.ClaimsResponseShim.client_id">
             <summary>
-            Gets the user's email address.
+            Gets the user's client_id address.
             </summary>
         </member>
         <member name="P:DotNetOpenAuth.OpenId.Interop.ClaimsResponseShim.FullName">

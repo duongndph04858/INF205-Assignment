@@ -1,4 +1,4 @@
-﻿<%@ Page Title="About" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Category.aspx.cs" Inherits="About" %>
+﻿<%@ Page Title="Category" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Category.aspx.cs" Inherits="Category" %>
 
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <link type="text/css" rel="stylesheet" href="Content/css/category.css">
@@ -126,7 +126,7 @@
                 </tr>
             </SelectedItemTemplate>
         </asp:ListView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Nhom3_QuanLyBanHang.mdf;Integrated Security=True;Connect Timeout=30" DeleteCommand="DELETE FROM [PRODUCT_CATEGORY] WHERE [id] = @id" InsertCommand="INSERT INTO [PRODUCT_CATEGORY] ([name], [parent_category_id]) VALUES (@name, @parent_category_id)" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [id], [name], [parent_category_id] FROM [PRODUCT_CATEGORY]" UpdateCommand="UPDATE [PRODUCT_CATEGORY] SET [name] = @name, [parent_category_id] = @parent_category_id WHERE [id] = @id">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [PRODUCT_CATEGORY] WHERE [id] = @id" InsertCommand="INSERT INTO [PRODUCT_CATEGORY] ([name], [parent_category_id]) VALUES (@name, @parent_category_id)" SelectCommand="SELECT [id], [name], [parent_category_id] FROM [PRODUCT_CATEGORY]" UpdateCommand="UPDATE [PRODUCT_CATEGORY] SET [name] = @name, [parent_category_id] = @parent_category_id WHERE [id] = @id">
             <DeleteParameters>
                 <asp:Parameter Name="id" Type="Int32" />
             </DeleteParameters>

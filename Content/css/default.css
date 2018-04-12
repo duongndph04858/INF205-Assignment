@@ -27,6 +27,7 @@ img
     width: 90%;
     height: 360px;
     box-shadow: 2px 2px 4px #000;
+    margin-bottom:20px;
 }
 .btn
 {
@@ -43,25 +44,9 @@ img
     border: 1px solid #000;
 }
 
-    .button:hover
-    {
-        cursor: pointer;
-        background: #f28838;
-    }
-
-.sp:hover .button
-{
-    display: inline-block;
-}
-
 .sp:hover img
 {
     width: 82%;
-}
-
-.sp:hover .btn
-{
-    background: #62eae2;
 }
 
 .tensp

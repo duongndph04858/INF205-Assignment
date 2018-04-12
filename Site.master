@@ -19,9 +19,9 @@
                         <li class="mnitems"><a runat="server" href="~/">Trang chủ</a></li>
                         <li class="mnitems"><a runat="server" href="~/Category.aspx">Quản lý danh mục</a></li>
                         <li class="mnitems"><a runat="server" href="~/Product.aspx">Quản lý sản phẩm</a></li>
-                        <li class="mnitems"><a runat="server" href="~/">Quản lý khách hàng</a></li>
-                        <li class="mnitems"><a runat="server" href="~/">Quản lý hóa đơn</a></li>
-                        <li style="border-bottom: none" class="mnitems"><a>Liên hệ</a></li>
+                        <li class="mnitems"><a runat="server" href="~/Client.aspx">Quản lý khách hàng</a></li>
+                        <li class="mnitems"><a runat="server" href="~/Purchase.aspx">Quản lý hóa đơn</a></li>
+                        <li style="border-bottom: none" class="mnitems"><a runat="server" href="~/Contact.aspx">Liên hệ</a></li>
                     </ul>
                 </div>
                 <div id="rightContent">

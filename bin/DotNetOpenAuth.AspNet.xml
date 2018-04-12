@@ -87,7 +87,7 @@
             <summary>
             Gets an (insecure, non-unique) alias for the user that the user should recognize as himself/herself.
             </summary>
-            <value>This may take the form of an email address, a URL, or any other value that the user may recognize.</value>
+            <value>This may take the form of an client_id address, a URL, or any other value that the user may recognize.</value>
             <remarks>
             This alias may come from the Provider or may be derived by the relying party if the Provider does not supply one.
             It is not guaranteed to be unique and certainly does not merit any trust in any suggested authenticity.
@@ -594,11 +594,11 @@
             </summary>
             <value> The birthday. </value>
         </member>
-        <member name="P:DotNetOpenAuth.AspNet.Clients.FacebookGraphData.Email">
+        <member name="P:DotNetOpenAuth.AspNet.Clients.FacebookGraphData.client_id">
             <summary>
-            Gets or sets the email.
+            Gets or sets the client_id.
             </summary>
-            <value> The email. </value>
+            <value> The client_id. </value>
         </member>
         <member name="P:DotNetOpenAuth.AspNet.Clients.FacebookGraphData.Gender">
             <summary>

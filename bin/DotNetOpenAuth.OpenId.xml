@@ -2709,8 +2709,8 @@
             Various ways to contact a person.
             </summary>
         </member>
-        <member name="F:DotNetOpenAuth.OpenId.Extensions.AttributeExchange.WellKnownAttributes.Contact.Email">
-            <summary>Internet SMTP email address as per RFC2822</summary>
+        <member name="F:DotNetOpenAuth.OpenId.Extensions.AttributeExchange.WellKnownAttributes.Contact.client_id">
+            <summary>Internet SMTP client_id address as per RFC2822</summary>
             <example>"jsmith@isp.example.com"</example>
         </member>
         <member name="T:DotNetOpenAuth.OpenId.Extensions.AttributeExchange.WellKnownAttributes.Contact.Phone">
@@ -3796,9 +3796,9 @@
             Gets or sets the level of interest a relying party has in the nickname of the user.
             </summary>
         </member>
-        <member name="P:DotNetOpenAuth.OpenId.Extensions.SimpleRegistration.ClaimsRequest.Email">
+        <member name="P:DotNetOpenAuth.OpenId.Extensions.SimpleRegistration.ClaimsRequest.client_id">
             <summary>
-            Gets or sets the level of interest a relying party has in the email of the user.
+            Gets or sets the level of interest a relying party has in the client_id of the user.
             </summary>
         </member>
         <member name="P:DotNetOpenAuth.OpenId.Extensions.SimpleRegistration.ClaimsRequest.FullName">
@@ -3974,9 +3974,9 @@
             Gets or sets the nickname the user goes by.
             </summary>
         </member>
-        <member name="P:DotNetOpenAuth.OpenId.Extensions.SimpleRegistration.ClaimsResponse.Email">
+        <member name="P:DotNetOpenAuth.OpenId.Extensions.SimpleRegistration.ClaimsResponse.client_id">
             <summary>
-            Gets or sets the user's email address.
+            Gets or sets the user's client_id address.
             </summary>
         </member>
         <member name="P:DotNetOpenAuth.OpenId.Extensions.SimpleRegistration.ClaimsResponse.FullName">
@@ -4022,7 +4022,7 @@
         </member>
         <member name="P:DotNetOpenAuth.OpenId.Extensions.SimpleRegistration.ClaimsResponse.MailAddress">
             <summary>
-            Gets a combination of the user's full name and email address.
+            Gets a combination of the user's full name and client_id address.
             </summary>
         </member>
         <member name="P:DotNetOpenAuth.OpenId.Extensions.SimpleRegistration.ClaimsResponse.Culture">

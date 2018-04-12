@@ -8390,9 +8390,9 @@
             <param name="xmlWriter"> The XmlWriter to serialize to </param>
             <returns> </returns>
         </member>
-        <member name="F:System.Data.Entity.Edm.Serialization.Xml.Internal.Csdl.EdmModelCsdlSchemaWriter.XmlConstants.SyndAuthorEmail">
+        <member name="F:System.Data.Entity.Edm.Serialization.Xml.Internal.Csdl.EdmModelCsdlSchemaWriter.XmlConstants.SyndAuthorclient_id">
             <summary>
-                author/email
+                author/client_id
             </summary>
         </member>
         <member name="F:System.Data.Entity.Edm.Serialization.Xml.Internal.Csdl.EdmModelCsdlSchemaWriter.XmlConstants.SyndAuthorName">
@@ -8425,9 +8425,9 @@
                 title
             </summary>
         </member>
-        <member name="F:System.Data.Entity.Edm.Serialization.Xml.Internal.Csdl.EdmModelCsdlSchemaWriter.XmlConstants.SyndContributorEmail">
+        <member name="F:System.Data.Entity.Edm.Serialization.Xml.Internal.Csdl.EdmModelCsdlSchemaWriter.XmlConstants.SyndContributorclient_id">
             <summary>
-                contributor/email
+                contributor/client_id
             </summary>
         </member>
         <member name="F:System.Data.Entity.Edm.Serialization.Xml.Internal.Csdl.EdmModelCsdlSchemaWriter.XmlConstants.SyndContributorName">

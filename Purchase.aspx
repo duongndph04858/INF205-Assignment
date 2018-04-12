@@ -1,12 +1,12 @@
-﻿<%@ Page Title="Client" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeFile="Client.aspx.cs" Inherits="Client" %>
+﻿<%@ Page Title="Purchase" Language="C#" MasterPageFile="~/Site.master" AutoEventWireup="true" CodeFile="Purchase.aspx.cs" Inherits="Purchase" %>
 
-<asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
-    <link type="text/css" rel="stylesheet" href="Content/css/client.css">
+<asp:Content ID="Content1" ContentPlaceHolderID="MainContent" Runat="Server">
+    <link type="text/css" rel="stylesheet" href="Content/css/purchase.css">
     <hgroup class="title">
-        <h2>Quản lý khách hàng</h2>
+        <h2>Quản lý hóa đơn</h2>
     </hgroup>
     <hr />
-    <div style="width: 100%; text-align: center">
+    <div style="width:100%;text-align:center">
         <asp:ListView ID="ListView1" runat="server" DataKeyNames="id" DataSourceID="SqlDataSource1" InsertItemPosition="LastItem">
             <AlternatingItemTemplate>
                 <tr style="">
@@ -14,14 +14,14 @@
                         <asp:Button CssClass="button" ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
                         <asp:Button CssClass="button" ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
                     </td>
-                    <td>
+                    <td class="mid">
                         <asp:Label ID="idLabel" runat="server" Text='<%# Eval("id") %>' />
                     </td>
-                    <td class="mid">
-                        <asp:Label ID="full_nameLabel" runat="server" Text='<%# Eval("full_name") %>' />
+                    <td >
+                        <asp:Label ID="purchase_noLabel" runat="server" Text='<%# Eval("purchase_no") %>' />
                     </td>
-                    <td class="mid">
-                        <asp:Label ID="emailLabel" runat="server" Text='<%# Eval("email") %>' />
+                    <td>
+                        <asp:Label ID="client_idLabel" runat="server" Text='<%# Eval("client_id") %>' />
                     </td>
                 </tr>
             </AlternatingItemTemplate>
@@ -35,15 +35,15 @@
                         <asp:Label ID="idLabel1" runat="server" Text='<%# Eval("id") %>' />
                     </td>
                     <td>
-                        <asp:TextBox ID="full_nameTextBox" runat="server" Text='<%# Bind("full_name") %>' />
+                        <asp:TextBox ID="purchase_noTextBox" runat="server" Text='<%# Bind("purchase_no") %>' />
                     </td>
                     <td>
-                        <asp:TextBox ID="emailTextBox" runat="server" Text='<%# Bind("email") %>' />
+                        <asp:TextBox ID="client_idTextBox" runat="server" Text='<%# Bind("client_id") %>' />
                     </td>
                 </tr>
             </EditItemTemplate>
             <EmptyDataTemplate>
-                <table runat="server" style="">
+                <table id="Table1" runat="server" style="">
                     <tr>
                         <td>No data was returned.</td>
                     </tr>
@@ -57,10 +57,10 @@
                     </td>
                     <td>&nbsp;</td>
                     <td>
-                        <asp:TextBox ID="full_nameTextBox" runat="server" Text='<%# Bind("full_name") %>' />
+                        <asp:TextBox ID="purchase_noTextBox" runat="server" Text='<%# Bind("purchase_no") %>' />
                     </td>
                     <td>
-                        <asp:TextBox ID="emailTextBox" runat="server" Text='<%# Bind("email") %>' />
+                        <asp:TextBox ID="client_idTextBox" runat="server" Text='<%# Bind("client_id") %>' />
                     </td>
                 </tr>
             </InsertItemTemplate>
@@ -70,27 +70,27 @@
                         <asp:Button CssClass="button" ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
                         <asp:Button CssClass="button" ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
                     </td>
-                    <td>
+                    <td class="mid">
                         <asp:Label ID="idLabel" runat="server" Text='<%# Eval("id") %>' />
                     </td>
-                    <td class="mid">
-                        <asp:Label ID="full_nameLabel" runat="server" Text='<%# Eval("full_name") %>' />
+                    <td>
+                        <asp:Label ID="purchase_noLabel" runat="server" Text='<%# Eval("purchase_no") %>' />
                     </td>
-                    <td class="mid">
-                        <asp:Label ID="emailLabel" runat="server" Text='<%# Eval("email") %>' />
+                    <td>
+                        <asp:Label ID="client_idLabel" runat="server" Text='<%# Eval("client_id") %>' />
                     </td>
                 </tr>
             </ItemTemplate>
             <LayoutTemplate>
-                <table runat="server">
-                    <tr runat="server">
-                        <td runat="server">
+                <table id="Table2" runat="server">
+                    <tr id="Tr1" runat="server">
+                        <td id="Td1" runat="server">
                             <table id="itemPlaceholderContainer" runat="server" border="0" style="">
-                                <tr runat="server" style="">
-                                    <th runat="server"></th>
-                                    <th runat="server">Mã khách hàng</th>
-                                    <th runat="server">Họ và tên</th>
-                                    <th runat="server">Email</th>
+                                <tr id="Tr2" runat="server" style="">
+                                    <th id="Th1" runat="server"></th>
+                                    <th id="Th2" runat="server">STT</th>
+                                    <th id="Th3" runat="server">Mã hóa đơn</th>
+                                    <th id="Th4" runat="server">Mã khách hàng</th>
                                 </tr>
                                 <tr id="itemPlaceholder" runat="server">
                                 </tr>
@@ -98,45 +98,46 @@
                         </td>
                     </tr>
                 </table>
-                <div style="text-align: center">
-                    <asp:DataPager ID="DataPager2" runat="server" PageSize="5">
-                        <Fields>
-                            <asp:NextPreviousPagerField ButtonCssClass="pager" ButtonType="Button" ShowFirstPageButton="True" ShowLastPageButton="True" />
-                        </Fields>
-                    </asp:DataPager>
+                <div style="text-align:center">
+                            <asp:DataPager ID="DataPager2" runat="server" PageSize="5">
+                                <Fields>
+                                    <asp:NextPreviousPagerField ButtonCssClass="pager" ButtonType="Button" ShowFirstPageButton="True" ShowLastPageButton="True" />
+                                </Fields>
+                            </asp:DataPager>
                 </div>
             </LayoutTemplate>
             <SelectedItemTemplate>
                 <tr style="">
                     <td>
-                        <asp:Button ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
-                        <asp:Button ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
+                        <asp:Button CssClass="button"  ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
+                        <asp:Button CssClass="button" ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
                     </td>
                     <td>
                         <asp:Label ID="idLabel" runat="server" Text='<%# Eval("id") %>' />
                     </td>
                     <td>
-                        <asp:Label ID="full_nameLabel" runat="server" Text='<%# Eval("full_name") %>' />
+                        <asp:Label ID="purchase_noLabel" runat="server" Text='<%# Eval("purchase_no") %>' />
                     </td>
                     <td>
-                        <asp:Label ID="emailLabel" runat="server" Text='<%# Eval("email") %>' />
+                        <asp:Label ID="client_idLabel" runat="server" Text='<%# Eval("client_id") %>' />
                     </td>
                 </tr>
             </SelectedItemTemplate>
         </asp:ListView>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="Data Source=(LocalDB)\v11.0;AttachDbFilename=|DataDirectory|\Nhom3_QuanLyBanHang.mdf;Integrated Security=True;Connect Timeout=30" DeleteCommand="DELETE FROM [CLIENT] WHERE [id] = @id" InsertCommand="INSERT INTO [CLIENT] ([full_name], [email]) VALUES (@full_name, @email)" ProviderName="System.Data.SqlClient" SelectCommand="SELECT [id], [full_name], [email] FROM [CLIENT]" UpdateCommand="UPDATE [CLIENT] SET [full_name] = @full_name, [email] = @email WHERE [id] = @id">
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" DeleteCommand="DELETE FROM [PURCHASE] WHERE [id] = @id" InsertCommand="INSERT INTO [PURCHASE] ([purchase_no], [client_id]) VALUES (@purchase_no, @client_id)" SelectCommand="SELECT [id], [purchase_no], [client_id] FROM [PURCHASE]" UpdateCommand="UPDATE [PURCHASE] SET [purchase_no] = @purchase_no, [client_id] = @client_id WHERE [id] = @id">
             <DeleteParameters>
                 <asp:Parameter Name="id" Type="Int32" />
             </DeleteParameters>
             <InsertParameters>
-                <asp:Parameter Name="full_name" Type="String" />
-                <asp:Parameter Name="email" Type="String" />
+                <asp:Parameter Name="purchase_no" Type="String" />
+                <asp:Parameter Name="client_id" Type="Int32" />
             </InsertParameters>
             <UpdateParameters>
-                <asp:Parameter Name="full_name" Type="String" />
-                <asp:Parameter Name="email" Type="String" />
+                <asp:Parameter Name="purchase_no" Type="String" />
+                <asp:Parameter Name="client_id" Type="Int32" />
                 <asp:Parameter Name="id" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
     </div>
 </asp:Content>
+
