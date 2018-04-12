@@ -6,19 +6,26 @@
 
 .imgsp
 {
-    height: 320px;
+    width: 100%;
+    background:#fff;
+    height: 70%;
 }
 
 img
 {
-    width: 85%;
+    width:70%;
 }
 
+.description
+{
+    height:25%;
+    width:100%;
+}
 .sp
 {
     border: 1px solid #808080;
     width: 90%;
-    height: 430px;
+    height: 360px;
     box-shadow: 2px 2px 4px #000;
     margin-bottom: 15px;
 }
@@ -46,7 +53,7 @@ img
 
 .sp:hover img
 {
-    width: 100%;
+    width: 82%;
 }
 
 .sp:hover
