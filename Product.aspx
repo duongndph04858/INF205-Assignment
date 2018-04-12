@@ -23,10 +23,10 @@
                                 <br />
                                 Mô tả:
                     <asp:Label ID="descriptionLabel" runat="server" Text='<%# Eval("description") %>' />
-                                <br />
-                                <asp:Button CssClass="button" ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
-                                <asp:Button CssClass="button" ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
-                                <br />
+                                <div class="btn">
+                                    <asp:Button CssClass="button" ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
+                                    <asp:Button CssClass="button" ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
+                                </div>
                             </div>
                         </div>
                     </td>
@@ -98,10 +98,10 @@
                                 <br />
                                 Mô tả:
                     <asp:Label ID="descriptionLabel" runat="server" Text='<%# Eval("description") %>' />
-                                <br />
-                                <asp:Button CssClass="button" ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
-                                <asp:Button CssClass="button" ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
-                                <br />
+                                <div class="btn">
+                                    <asp:Button CssClass="button" ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
+                                    <asp:Button CssClass="button" ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
+                                </div>
                             </div>
                         </div>
                     </td>
@@ -189,7 +189,7 @@
                             <div class="imgsp">
                                 <asp:Image ID="imgLabel" runat="server" ImageUrl='<%# Eval("img") %>' />
                             </div>
-                            <div class="descriptopn">
+                            <div class="description">
                                 <asp:Label ID="nameLabel" CssClass="tensp" runat="server" Text='<%# Eval("name") %>' />
                                 <br />
                                 <asp:Label ID="priceLabel" CssClass="gia" runat="server" Text='<%# Eval("price") %>' />
@@ -197,10 +197,10 @@
                                 <br />
                                 Mô tả:
                     <asp:Label ID="descriptionLabel" runat="server" Text='<%# Eval("description") %>' />
-                                <br />
+                                <div class="btn">
                                 <asp:Button CssClass="button" ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
                                 <asp:Button CssClass="button" ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
-                                <br />
+                                </div>
                             </div>
                         </div>
                     </td>
@@ -272,10 +272,10 @@
                                 <br />
                                 Mô tả:
                     <asp:Label ID="descriptionLabel" runat="server" Text='<%# Eval("description") %>' />
-                                <br />
+                                <div class="btn">
                                 <asp:Button CssClass="button" ID="DeleteButton" runat="server" CommandName="Delete" Text="Delete" />
                                 <asp:Button CssClass="button" ID="EditButton" runat="server" CommandName="Edit" Text="Edit" />
-                                <br />
+                                </div>
                             </div>
                         </div>
                     </td>

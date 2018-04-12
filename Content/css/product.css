@@ -27,12 +27,15 @@ img
     width: 90%;
     height: 360px;
     box-shadow: 2px 2px 4px #000;
-    margin-bottom: 15px;
+}
+.btn
+{
+    height:50px;
 }
 
 .button
 {
-    margin: 10px 0px;
+    margin: 15px 0px;
     width: 70px;
     display: none;
     height: 25px;
@@ -56,9 +59,9 @@ img
     width: 82%;
 }
 
-.sp:hover
+.sp:hover .btn
 {
-    background: #c8f6f7;
+    background: #62eae2;
 }
 
 .tensp
@@ -80,11 +83,11 @@ img
     width: 90%;
     height: 430px;
     box-shadow: 2px 2px 4px #000;
-    margin-bottom: 15px;
+    
 }
 
 .button2
-{
+{  
     margin: 10px 0px;
     width: 70px;
     height: 25px;
