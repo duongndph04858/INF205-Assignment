@@ -139,9 +139,5 @@
             </UpdateParameters>
         </asp:SqlDataSource>
     </div>
-    <div>
-
-        abc
-    </div>
 </asp:Content>
 
