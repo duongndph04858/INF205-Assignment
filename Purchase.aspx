@@ -139,8 +139,5 @@
             </UpdateParameters>
         </asp:SqlDataSource>
     </div>
-    <div>
-        huhu
-    </div>
 </asp:Content>
 
