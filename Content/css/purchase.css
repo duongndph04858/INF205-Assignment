@@ -7,6 +7,7 @@
 td
 {
     text-align: center;
+
 }
 
 .button
@@ -28,6 +29,7 @@ tr
 table
 {
     width:90%;
+    background:#d713f5;
 }
 input
 {
