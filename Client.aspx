@@ -6,7 +6,7 @@
         <h2>Quản lý khách hàng</h2>
     </hgroup>
     <hr />
-    <div style="width: 100%; text-align: center">
+    <div style="width: 100%; text-align: center; background:#e06a9d">
         <asp:ListView ID="ListView1" runat="server" DataKeyNames="id" DataSourceID="SqlDataSource1" InsertItemPosition="LastItem">
             <AlternatingItemTemplate>
                 <tr style="">
