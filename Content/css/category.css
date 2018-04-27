@@ -3,6 +3,13 @@
     text-align: left;
     padding-left: 40px;
 }
+th {
+    color: #0094ff;
+}
+span {
+color: #0094ff;
+}
+
 
 td
 {
@@ -14,6 +21,7 @@ td
     width: 60px;
     height: 25px;
     margin-left: 10px;
+    color: #0094ff;
 }
 
     .button:hover
@@ -26,7 +34,7 @@ tr
     line-height: 50px;
 }
 table
-{
+{   
     width:90%;
 }
 input
@@ -39,4 +47,5 @@ input
     width: 60px;
     height: 25px;
     margin-left: 10px;
+    color: #0094ff;
 }
